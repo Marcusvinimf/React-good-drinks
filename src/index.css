@@ -11,3 +11,32 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.nossoApp{
+  background-color: #FFFDF8;
+  text-align: center;
+}
+
+.botao{
+  background-color: red;
+  height: 40px;
+  width: 100px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.navmenu{
+  background-color: black;
+  color: #FFFBEF;
+  height: 60px;
+  font-size: 24px; 
+  font-weight: bold;
+}
+
+.footer{
+  background-color: black;
+  color: #FFFBEF;
+  height: 40px; 
+  font-size: 18px; 
+  font-weight: bold;
+}
