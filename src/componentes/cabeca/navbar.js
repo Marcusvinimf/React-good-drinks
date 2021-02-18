@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
 
-export default class Cabecalho extends Component {
+export default class Navbar extends Component {
     render() {
         return (
             <div>
                 <header className="navmenu">
-                    <nav className="header">
+                    <nav className="headerPrincipal">
                         <a className="header">Drinks</a>
                         <a className="header">Sobre Nós</a>
                         <a className="header">Bons Drinks</a>

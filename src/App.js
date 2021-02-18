@@ -1,10 +1,12 @@
 import './App.css';
-import Rodape from './Rodape';
-import Corpo from './Corpo';
+import Rodape from './componentes/rodape/Rodape';
+import Corpo from './componentes/corpo/Corpo';
+import Cabecalho from './componentes/cabeca/Cabecalho';
 
 function App() {
   return (
     <div className="nossoApp">
+      <Cabecalho/>
       <Corpo/>
       <Rodape/>
     </div>
