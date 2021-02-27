@@ -2,6 +2,17 @@
   text-align: center;
 } */
 
+@import url('https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&family=Open+Sans+Condensed:wght@300;700&family=Open+Sans:wght@300;400;700&display=swap');
+
+:root {
+  --preto: #101010;
+  --vermelho: #5C0511;
+  --laranja: #F9AE48;
+  --logo-font: "Bilbo Swash Caps";
+  --title-font: "Open Sans Condensed";
+  --body-font: "Open Sans";
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -13,10 +24,10 @@
   }
 }
 
-.nossoApp{
+.corpo{
   text-align: center;
   display: grid;
-  grid-template-rows: 80px 640px 50px;
+  grid-template-rows: 80px 660px;
 }
 
 .navmenu{
@@ -24,10 +35,26 @@
 }
 
 .headerPrincipal{
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  display: flex;
+  justify-content: space-between;
   padding-top: 10px;
   height: 20px;
+  font-family: var(--title-font);
+  font-size: 26px;
+}
+
+.header:first-child{
+  margin-left: 34px;
+}
+
+.header:nth-child(5){
+  margin-right: 34px;
+}
+
+.header:nth-child(3){
+  font-family: var(--logo-font);
+  font-size: 36px;
+  font-weight: 100;
 }
 
 .header:hover{
@@ -35,19 +62,32 @@
   cursor: pointer;
 }
 
+/* grid-template-areas:
+"foto forms"
+"foto forms"
+"foto forms"
+"foto nada"; */
+
 .formsCompleto{
   display: grid;
+  /* grid-template-areas: foto forms; */
   grid-template-columns: repeat(2, 50%);
   padding-top: 40px;
   padding-bottom: 0px;
   margin-left: auto;
 }
+h2{
+  font-family: var(--title-font);
+  font-size: 30px;
+}
 
 .forms{
   text-align: left;
   display: grid;
-  grid-template-rows: 35px 35px 35px 35px 35px 100px;
+  grid-template-rows: 40px 40px 40px 40px 40px 100px;
   grid-template-columns: 70%;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 .imagem1{
@@ -103,8 +143,6 @@
   height: 15px; 
   font-size: 14px; 
   font-weight: bold;
-  padding-top: 20px;
-  padding-bottom: 0%;
-  margin-bottom: 0%;
+  margin-bottom: 15px;
 }
 

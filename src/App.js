@@ -1,14 +1,11 @@
 import './App.css';
-import Rodape from './componentes/rodape/Rodape';
-import Corpo from './componentes/corpo/Corpo';
-import Cabecalho from './componentes/cabeca/Cabecalho';
+import Corpo from './componentesContato/corpo/Corpo';
+import Sobre from './componentesSobre/sobre'
 
 function App() {
   return (
     <div className="nossoApp">
-      <Cabecalho/>
-      <Corpo/>
-      <Rodape/>
+      <Sobre/>
     </div>
   );
 }
