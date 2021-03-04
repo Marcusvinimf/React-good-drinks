@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-import Img from 'https://bonsdrinks.netlify.app/static/media/contact-pic.689e126c.jpg';
+import Img from './benditaimagem.jpg';
 
 export default class ImgText extends Component {
     render() {
