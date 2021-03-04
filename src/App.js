@@ -4,6 +4,7 @@ import {BrowserRouter as Router, Switch, Route, Link, BrowserRouter} from "react
 import './assets/App.css';
 import Cabecalho from './componentesContato/cabeca/Cabecalho';
 import Drinks from './componentesContato/cabeca/Drinks';
+import Erro from './componentesContato/cabeca/Erro';
 import Fim from './componentesContato/cabeca/Fim';
 import Home from './componentesContato/cabeca/Home';
 import Formulario from './componentesContato/corpo/Formulario';
@@ -30,9 +31,9 @@ function App() {
         <Route path="/final">
           <Fim/>
         </Route>
-        {/* <Route path="*">
-          <Error/>
-        </Route> */}
+        <Route path="*">
+          <Erro/>
+        </Route>
       </Switch>
     <Rodape/>
   </BrowserRouter>
