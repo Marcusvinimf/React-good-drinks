@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {BrowserRouter as Router, Switch, Route, Link, BrowserRouter} from "react-router-dom"
+import { BrowserRouter as Router, Switch, Route, Link, BrowserRouter } from "react-router-dom"
 import './assets/App.css';
 import Cabecalho from './componentesContato/cabeca/Cabecalho';
 import Drinks from './componentesContato/cabeca/Drinks';
@@ -14,29 +14,29 @@ import Sobre from './componentesSobre/sobre'
 function App() {
   return (
     <BrowserRouter>
-    <Cabecalho/>  
+      <Cabecalho />
       <Switch>
         <Route path="/drinks">
-          <Drinks/>
+          <Drinks />
         </Route>
         <Route path="/sobre">
-          <Sobre/>
+          <Sobre />
         </Route>
         <Route path="/" exact >
-          <Home/>
+          <Home />
         </Route>
         <Route path="/contato">
-          <Formulario/>
+          <Formulario />
         </Route>
         <Route path="/final">
-          <Fim/>
+          <Fim />
         </Route>
         <Route path="*">
-          <Erro/>
+          <Erro />
         </Route>
       </Switch>
-    <Rodape/>
-  </BrowserRouter>
+      <Rodape />
+    </BrowserRouter>
   );
 }
 
