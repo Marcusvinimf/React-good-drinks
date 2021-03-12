@@ -1,28 +1,24 @@
-import React, { Component } from 'react'
+import React, { Component, useEffect } from 'react'
 
-export default class Drinks extends Component {
-    constructor() {
-        super()
-        this.state = {
-            contador: 0,
-            dadosApi: []
-        }
-        console.log("Fui iniciado")
-    }
+const Drinks = () => {
 
-    componentDidMount() {
+    const [dadosApi, setDadosApi] = React.useState([])
+
+    useEffect(() => {
         fetch('https://www.thecocktaildb.com/api/json/v1/1/filter.php?c=Cocktail')
             .then(response => response.json())
-            .then(data => { this.setState({ dadosApi: data.drinks }) })
-        console.log("Fui montado")
-    }
+            .then(data => { setDadosApi(data.drinks)
+            })
+    }, []);
 
-    render() {
-        console.log("Fui renderizado")
-        return (
-            <div className="listaDrinks">
-                <ol>{this.state.dadosApi.map(drink => <li>{drink.strDrink}</li>)}</ol>
-            </div>
-        )
-    }
+    const nomeDrinks = dadosApi.map((drink, index) => index < 10? <li key={index}>{drink.strDrink}</li> : null)
+    const fotoDrinks = dadosApi.map((drink, index) => index < 10? <img key={index} className="asDezBebidas" src={drink.strDrinkThumb}></img> : null)
+    return (
+        <div className="listaDrinks">
+            <ol>{nomeDrinks}</ol>
+            {fotoDrinks}
+        </div>
+    )
 }
+
+export default Drinks;

@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import Input from '../cabeca/Input'
+import Button from './Button';
 
 export default class Fim extends Component {
 
@@ -30,8 +32,9 @@ export default class Fim extends Component {
                 <h1 className="horaExata">
                     Vms ver no que vai dar {this.state.date.toLocaleTimeString()}
                 </h1>
+                <Input>Nome:</Input>
+                <Button></Button>
             </div>
-
         )
     }
 }

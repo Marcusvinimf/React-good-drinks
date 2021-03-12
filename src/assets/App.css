@@ -113,11 +113,15 @@ a{
   margin-bottom: 120px;
 }
 
+.asDezBebidas{
+  width: 200px;
+}
+
 .horaExata{
   text-align: center;
   margin-top: 300px;
   font-size: 35px;
-  margin-bottom: 350px;
+  margin-bottom: 310px;
 }
 
 h2{

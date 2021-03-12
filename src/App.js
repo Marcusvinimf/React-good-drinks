@@ -29,7 +29,7 @@ function App() {
           <Formulario />
         </Route>
         <Route path="/final">
-          <Fim />
+          <Fim identifica="inputValueChange" tipo="text" nome="Nome"/>
         </Route>
         <Route path="*">
           <Erro />
