@@ -11,6 +11,7 @@ import Home from './components/home/Home';
 import Formulario from './components/formulario/Formulario';
 import Rodape from './components/rodape/Rodape';
 import Sobre from './components/sobreNos/SobreNós'
+import NossoTime from './components/nossoTime/NossoTime';
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
       <Cabecalho />
       <Switch>
         <Route path="/drinks">
-          <Drinks/>
+          <Drinks />
         </Route>
         <Route path="/sobre">
           <Sobre />
@@ -30,7 +31,10 @@ function App() {
           <Formulario />
         </Route>
         <Route path="/final">
-          <Fim id="inputValueChange" tipo="text" nome="Nome"/>
+          <Fim id="inputValueChange" tipo="text" nome="Nome" />
+        </Route>
+        <Route path="/nosso">
+          <NossoTime />
         </Route>
         <Route path="*">
           <Erro />

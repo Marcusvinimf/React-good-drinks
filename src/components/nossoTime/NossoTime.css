@@ -1,0 +1,46 @@
+.nossoTime{
+  display: grid;
+  grid-template-areas:
+    "title title"
+    "item item"
+    "item item";
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: 80px repeat(2,auto);
+  grid-gap: 40px;
+  margin-bottom: 115px;
+}
+
+.nossoTimeTitulo{
+  grid-area: title;
+  text-align: center;
+  margin: 30px 0;
+}
+
+.nossoTimeCard{
+  display: flex;
+  flex-direction: row;
+  width: 225px;
+  margin: auto;
+  width: 600px;
+}
+
+.nossoTimeCardImg{
+    width: 230px;
+    padding: 0 20px;
+}
+
+.nossoTimeCardNome{
+  font-family: var(--body-font);
+  font-size: 18px;
+  color: #101010;
+  font-weight: 700;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.nossoTimeCardDescricao{
+  font-family: var(--body-font);
+  font-size: 16px;
+  padding: 0;
+  margin: 10px 0;
+}
