@@ -1,0 +1,57 @@
+.formulario{
+  display: grid;
+  grid-template-rows: 80px 500px;
+  width: 80%;
+  grid-template-areas:
+      "titulo titulo"
+      "esquerda direita";
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  gap: 20px;
+  margin: 15px auto 80px;
+}
+
+.arruma{
+  margin-top: 30px;
+}
+
+.formularioTitulo{
+  grid-area: titulo;
+  text-align: center;
+}
+
+.formularioImagem{
+  width: 600px;
+  grid-area: esquerda;
+}
+
+.forms{
+  grid-area: direita;
+}
+
+.textArea {
+  display: block;
+  width: 100%;
+  height: 120px;
+  border-radius: 5px;
+  border: 1px solid rgba(92,5,17,.4);
+  padding: 0;
+  font-size: 18px;
+  font-family: var(--boby-font);
+  color: #101010;
+  outline: none;
+}
+
+.textArea:hover {
+  border: 1px solid var(--laranja);
+}
+
+.divButtonFormulario{
+  display: grid;
+  grid-template-areas: 
+    'direita esquerda';
+}
+
+.buttonDiv{
+  grid-area: esquerda;
+}

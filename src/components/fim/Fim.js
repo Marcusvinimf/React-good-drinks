@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import Input from '../cabeca/Input'
-import Button from './Button';
+import Input from '../input/Input'
+import Button from '../button/Button';
+import './Fim.css'
 
 export default class Fim extends Component {
 
@@ -28,12 +29,18 @@ export default class Fim extends Component {
     render() {
         console.log("Fui renderizado");
         return (
-            <div>
+            <div className='fim'>
                 <h1 className="horaExata">
                     Vms ver no que vai dar {this.state.date.toLocaleTimeString()}
                 </h1>
-                <Input>Nome:</Input>
-                <Button></Button>
+                <div className='inputFim'>
+                    <Input>Nome:</Input>
+                </div>
+                <div className='fimDivButton'>
+                    <div className='button'>
+                        <Button>Final cowdown</Button>
+                    </div>
+                </div>
             </div>
         )
     }

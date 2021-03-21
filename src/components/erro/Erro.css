@@ -1,0 +1,12 @@
+.erro{
+  margin-bottom: 160px;
+}
+
+.mensagemDeErro{
+  text-align: center;
+  padding-top: 230px;
+  padding-bottom: 200px;
+  font-size: 80px;
+  color: #101010;
+  border-bottom: 800px;
+}

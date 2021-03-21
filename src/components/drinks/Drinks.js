@@ -1,4 +1,5 @@
 import React, { Component, useEffect } from 'react'
+import './Drinks.css'
 
 const Drinks = () => {
 

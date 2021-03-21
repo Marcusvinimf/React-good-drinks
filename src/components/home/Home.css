@@ -1,0 +1,26 @@
+.homePrincipal{
+  background-image: url('../../assets/imgs/img2.jpg');
+  background-size: 1340px;
+  background-position: center;
+  width:1060px ;
+  background-repeat: no-repeat;
+  padding: 10px 190px 500px 190px;
+  margin-bottom: 10px;
+}
+
+.bonsDrinksTilito{
+  font-family: "Bilbo Swash Caps",cursive;
+  font-size: 120px;
+  text-align: center;
+  color: #fffdf8;
+  margin-top: 20px;
+  margin-bottom: 0;
+  animation-name: zoom;
+  animation-duration: 1000ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes zoom {
+  from {font-size: 50px;}
+  to {font-size: 120px;}
+}

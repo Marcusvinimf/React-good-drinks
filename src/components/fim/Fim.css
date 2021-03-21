@@ -1,0 +1,27 @@
+.fim{
+  display: grid;
+  grid-template-rows: 80px 470px;
+  margin-bottom: 100px;
+}
+
+.fimDivButton{
+  display: grid;
+  grid-template-areas: 
+  'um dois tres';
+}
+
+.inputFim{
+  width: 250px;
+}
+
+.horaExata{
+  text-align: center;
+  margin-top: 300px;
+  font-size: 35px;
+  margin-bottom: 310px;
+}
+
+.button{
+  grid-area: dois;
+}
+

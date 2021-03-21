@@ -2,14 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Switch, Route, Link, BrowserRouter } from "react-router-dom"
 import './assets/App.css';
-import Cabecalho from './componentesContato/cabeca/Cabecalho';
-import Drinks from './componentesContato/cabeca/Drinks';
-import Erro from './componentesContato/cabeca/Erro';
-import Fim from './componentesContato/cabeca/Fim';
-import Home from './componentesContato/cabeca/Home';
-import Formulario from './componentesContato/corpo/Formulario';
-import Rodape from './componentesContato/rodape/Rodape';
-import Sobre from './componentesSobre/sobre'
+import Cabecalho from './components/navbar/Navbar';
+import Drinks from './components/drinks/Drinks';
+// import DrinksTwo from './components/drinksTwo/DrinksTwo';
+import Erro from './components/erro/Erro';
+import Fim from './components/fim/Fim';
+import Home from './components/home/Home';
+import Formulario from './components/formulario/Formulario';
+import Rodape from './components/rodape/Rodape';
+import Sobre from './components/sobreNos/SobreNós'
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
       <Cabecalho />
       <Switch>
         <Route path="/drinks">
-          <Drinks />
+          <Drinks/>
         </Route>
         <Route path="/sobre">
           <Sobre />
@@ -29,7 +30,7 @@ function App() {
           <Formulario />
         </Route>
         <Route path="/final">
-          <Fim identifica="inputValueChange" tipo="text" nome="Nome"/>
+          <Fim id="inputValueChange" tipo="text" nome="Nome"/>
         </Route>
         <Route path="*">
           <Erro />

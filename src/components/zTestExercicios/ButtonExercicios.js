@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react'
 
-const Button = () => {
+const ButtonExercicios = () => {
 
   const [contador, setContador] = useState(0);
 
@@ -17,4 +17,4 @@ const Button = () => {
   );
 }
 
-export default Button
+export default ButtonExercicios
