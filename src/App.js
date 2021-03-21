@@ -18,7 +18,7 @@ function App() {
     <BrowserRouter>
       <Cabecalho />
       <Switch>
-        <Route path="/drinks">
+        <Route path="/drinks/">
           <Drinks />
         </Route>
         <Route path="/sobre">

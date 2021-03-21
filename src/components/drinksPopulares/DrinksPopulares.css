@@ -1,0 +1,23 @@
+.listaDrinks{
+  display: grid;
+  grid-template-areas: 
+  'foto descricao'
+  'foto descricao';
+  width: 800px;
+  height: 500px;
+  margin: auto;
+}
+
+.asDezBebidas{
+  grid-area: foto;
+  width: 400px;
+}
+
+.cadaFoto{
+  width: 90px;
+  margin: 10px;
+}
+
+.escrita{
+  margin-top: 15px;
+}
