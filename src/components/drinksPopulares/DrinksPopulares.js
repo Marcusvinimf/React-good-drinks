@@ -1,20 +1,13 @@
 import React, { Component, useEffect, useState } from 'react';
 import './DrinksPopulares.css';
+import reqCompleta from '../models/reqApi2';
 
 const DrinksPopulares = () => {
 
-  const [dadosApi1, setDadosApi1] = useState([]);
-  const [dadosApi2, setDadosApi2] = useState([]);
-  const dadosApi = [...dadosApi1, ...dadosApi2];
+  const [dadosApi, setDadosApi] = useState([]);
 
-  const requisicao = async () => {
-    const response = await fetch('https://www.thecocktaildb.com/api/json/v1/1/filter.php?c=Cocktail');
-    const dados = await response.json();
-    setDadosApi1(dados.drinks);
-
-    const respons2 = await fetch('https://www.thecocktaildb.com/api/json/v1/1/filter.php?c=Ordinary_Drink');
-    const dado2 = await respons2.json();
-    setDadosApi2(dado2.drinks);
+  const requisicao = () => {
+    setDadosApi(reqCompleta);
   }
 
   const posicao = ["Adonis Cocktail", "Affair", "After sex", "Alfie Cocktail", "Almeria", "Almond Joy", "Amaretto Rose", "Apricot Lady", "Arthur Tompkins", "Blackthorn", "155 Belmont", "747 Drink"]
