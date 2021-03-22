@@ -12,7 +12,7 @@ const BuscaDrinks = () => {
   
   useEffect(() => requisicao(), []);
 
-  const posicao = ["Adonis Cocktail", "Affair", "H.D.", "Alfie Cocktail", "Almeria", "Almond Joy", "Amaretto Rose", "Apricot Lady", "Arthur Tompkins", "Blackthorn", "155 Belmont", "747 Drink"]
+  const posicao = ["Affair", "H.D."]
 
   const escolhido = []
 
