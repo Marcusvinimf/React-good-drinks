@@ -14,3 +14,9 @@
   background: var(--laranja);
   cursor: pointer;
 }
+
+.avisoDoButton{
+  color: red;
+  font-size: 20px;
+  text-align: end;
+}
