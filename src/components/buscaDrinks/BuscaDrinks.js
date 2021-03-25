@@ -1,11 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import { reqDeInfo } from '../models/reqApi3';
+import Input from '../input/Input'
 
-const BuscaDrinks = (props) => {
+const BuscaDrinks = () => {
 
   const [dadosApi, setDadosApi] = useState([]);
-  const [stri, setStri] = useState('')
-  const [escolhido, setEscolhido] = useState([])
+
+  const [stri, setStri] = useState('');
+
+  const [escolhido, setEscolhido] = useState([]);
 
   const requisicao = async () => {
     const req = await reqDeInfo();
@@ -18,7 +21,6 @@ const BuscaDrinks = (props) => {
     setStri(valor.target.value);
   }
 
-  console.log(escolhido)
   const click = () => {
     console.log(escolhido)
     for (let i = 0; i < dadosApi.length; i++) {

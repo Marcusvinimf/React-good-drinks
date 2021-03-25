@@ -10,12 +10,13 @@ const Button = (props) => {
     setEstado(true);
     setAviso('aguarde...')
     setTimeout(() => setEstado(false), 3000)
-    setTimeout(() => {setAviso('')}, 3000)
+    setTimeout(() => setAviso('ENVIADO'), 2500)
+    setTimeout(() => window.location.reload(), 3000)
   }
 
   return (
     <>
-      <button disabled={estado} onClick={click} className="btn">
+      <button disabled={estado} type="button" onClick={click} className="btn">
         {props.children}
       </button>
       <p className='avisoDoButton'>{aviso}</p>

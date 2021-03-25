@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Switch, Route, Link, BrowserRouter } from "rea
 import './assets/App.css';
 import Cabecalho from './components/navbar/Navbar';
 import Drinks from './components/drinks/Drinks';
-// import DrinksTwo from './components/drinksTwo/DrinksTwo';
+import DrinksTwo from './components/drinksTwo/DrinksTwo';
 import Erro from './components/erro/Erro';
 import Fim from './components/fim/Fim';
 import Home from './components/home/Home';
@@ -12,6 +12,10 @@ import Formulario from './components/formulario/Formulario';
 import Rodape from './components/rodape/Rodape';
 import Sobre from './components/sobreNos/SobreNós'
 import NossoTime from './components/nossoTime/NossoTime';
+import { numberContext } from './components/zTestExercicios/Contexto';
+import Teste from './components/zTestExercicios/Teste';
+import Modal from './components/modal/Modal';
+import Carrossel from './components/carrossel/Carrossel';
 
 function App() {
   return (
@@ -19,10 +23,21 @@ function App() {
       <Cabecalho />
       <Switch>
         <Route path="/drinks/">
-          <Drinks />
+        <numberContext.Provider value={'yellow'}>
+          <DrinksTwo />
+        </numberContext.Provider>
         </Route>
         <Route path="/sobre">
           <Sobre />
+        </Route>
+        <Route path="/modal">
+          <Modal />
+        </Route>
+        <Route path="/carrossel">
+          <Carrossel/>
+        </Route>
+        <Route path="/teste">
+          <Teste/>
         </Route>
         <Route path="/" exact >
           <Home />
