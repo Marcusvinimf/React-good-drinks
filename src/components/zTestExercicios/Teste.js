@@ -14,7 +14,7 @@ const Teste = () => {
   const [final, setFinal] = useState([])
 
   const requestOptions = {
-    method: 'DELETE',
+    method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ productId: productId, productName: productName, linkText: linkText, productClusters: productClusters, items: items  })
   };
