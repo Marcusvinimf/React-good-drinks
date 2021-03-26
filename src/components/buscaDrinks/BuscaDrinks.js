@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { reqDeInfo } from '../models/reqApi3';
-import Input from '../input/Input'
+import Card from '../card/Card';
+import './BuscaDrinks.css';
 
 const BuscaDrinks = () => {
 
@@ -9,35 +10,40 @@ const BuscaDrinks = () => {
   const [stri, setStri] = useState('');
 
   const [escolhido, setEscolhido] = useState([]);
+  const [escolhido2, setEscolhido2] = useState([]);
+  const [escolhido3, setEscolhido3] = useState([]);
 
   const requisicao = async () => {
     const req = await reqDeInfo();
     setDadosApi(req);
   }
 
-  useEffect(() => requisicao(), []);
+  useEffect(() => requisicao(), [escolhido]);
 
   const change = (valor) => {
     setStri(valor.target.value);
   }
 
   const click = () => {
-    console.log(escolhido)
     for (let i = 0; i < dadosApi.length; i++) {
-      dadosApi.map((drink, index) => drink.strDrink == stri ? setEscolhido(<div key={index}><h2>{drink.strDrink}</h2>, <br key={index} />, <h3>{drink.strInstructions}</h3></div>) : null)
+      if (dadosApi[i].strDrink == stri) {
+        return setEscolhido(dadosApi[i].strDrink),
+          setEscolhido2(dadosApi[i].strDrinkThumb),
+          setEscolhido3(dadosApi[i].strInstructions)
+      } else {
+        return setEscolhido("NÃO TEM, TENTE OUTRO! "),
+          setEscolhido2(""),
+          setEscolhido3("")
+      }
     }
   }
 
   return (
-    <div>
+    <div className="buscaDrinks">
       <label>Qual o Drink? </label>
       <input type='text' onChange={change}></input>
       <button onClick={click}>Buscar:</button>
-
-      <div>
-        {escolhido}
-        <br />
-      </div>
+      <Card img={escolhido2} nome={escolhido} descri={escolhido3} />
     </div>
   )
 }

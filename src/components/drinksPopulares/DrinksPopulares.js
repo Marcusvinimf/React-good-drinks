@@ -5,7 +5,7 @@ import reqCompleta from '../models/reqApi2';
 const DrinksPopulares = () => {
 
   const [dadosApi, setDadosApi] = useState([]);
-
+  
   const requisicao = () => {
     setDadosApi(reqCompleta);
   }

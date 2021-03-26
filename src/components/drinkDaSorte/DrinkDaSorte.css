@@ -1,0 +1,10 @@
+.drinksDrinkDaSorte {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.drinkDaSorte{
+  width: 300px;
+  margin: auto;
+}

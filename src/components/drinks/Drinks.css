@@ -1,0 +1,18 @@
+.drinksPrincipalButton{
+  font-size: 18px;
+  font-family: var(--body-font);
+  font-weight: 700;
+  color: #fffdf8;
+  background: #5c0511;
+  width: 400px;
+  padding: 8px 10px;
+  border-radius: 5px;
+  margin: 35px;
+
+}
+
+.drinksPrincipalButton:hover {
+  background: var(--laranja);
+  cursor: pointer;
+}
+

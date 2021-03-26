@@ -1,0 +1,43 @@
+.card {
+  width: 800px;
+  height: 350px;
+  display: grid;
+  grid-template-areas: 
+      "cima"
+      "baixo"
+      "maisBaixoAinda";
+      grid-gap: 10px;
+  margin: 20px auto;
+  background: var(--vermelho);
+  padding: 70px 10px;
+  border-radius: 10px;
+}
+
+.card :hover {
+  transform: scale(1.25);
+  transition: .2s;
+  cursor: pointer;
+}
+
+.cardTmg {
+  grid-area: cima;
+  width: 200px;
+  border: 1px;
+  border-radius: 10px;
+  justify-self: center;
+}
+
+.cardNome {
+  grid-area: baixo;
+  justify-self: center;
+  font-family: var(--body-font);
+  font-weight: bold;
+  color: white;
+}
+
+.cardDescri {
+  grid-area: maisBaixoAinda;
+  justify-self: center;
+  font-weight: bold;
+  color: white;
+}

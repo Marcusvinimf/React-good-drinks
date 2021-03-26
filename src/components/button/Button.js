@@ -8,9 +8,9 @@ const Button = (props) => {
 
   const click = () => {
     setEstado(true);
-    setAviso('aguarde...')
+    setAviso('enviando...')
     setTimeout(() => setEstado(false), 3000)
-    setTimeout(() => setAviso('ENVIADO'), 2500)
+    setTimeout(() => setAviso('ENVIADO'), 2000)
     setTimeout(() => window.location.reload(), 3000)
   }
 

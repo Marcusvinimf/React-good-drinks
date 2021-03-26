@@ -11,12 +11,21 @@
 
 .asDezBebidas{
   grid-area: foto;
-  width: 500px;
+  width: 420px;
+  background-color: #2e1f1fbb;
 }
 
 .cadaFoto{
   width: 120px;
-  margin: 10px;
+  margin: 10px ;
+  
+}
+
+.cadaFoto:hover {
+  transform: scale(1.40);
+  transition: .2s;
+  background: var(--laranja);
+  cursor: pointer;
 }
 
 .escrita{

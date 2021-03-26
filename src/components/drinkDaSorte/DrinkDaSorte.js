@@ -1,5 +1,7 @@
-import React, { useEffect, useState } from 'react'
-import { drinksAle } from '../models/reqApi1'
+import React, { useEffect, useState } from 'react';
+import { drinksAle } from '../models/reqApi1';
+import Card from '../card/Card';
+import './DrinkDaSorte.css'
 
 const DrinkDaSorte = () => {
 
@@ -13,10 +15,11 @@ const DrinkDaSorte = () => {
   useEffect(() => click(), []);
 
   return (
-    <div>
-      <button onClick={click}> APERTE AQUI </button>
-      <h3> indo aqui o nome de cada na atualização da pag {dadosApi.strDrink}</h3>
-      <img src={dadosApi.strDrinkThumb}></img>
+    <div className="drinkDaSorte">
+      <button className="btn" onClick={click}> APERTE AQUI </button>
+      <div className="drinksDrinkDaSorte">
+        <Card img={dadosApi.strDrinkThumb} nome={dadosApi.strDrink} descri={dadosApi.strCategory}/>
+      </div>
     </div>
   )
 }

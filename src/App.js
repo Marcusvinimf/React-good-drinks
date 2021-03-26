@@ -24,8 +24,11 @@ function App() {
       <Switch>
         <Route path="/drinks/">
         <numberContext.Provider value={'yellow'}>
-          <DrinksTwo />
+          <Drinks />
         </numberContext.Provider>
+        </Route>
+        <Route path="/drinkstwo">
+          <DrinksTwo />
         </Route>
         <Route path="/sobre">
           <Sobre />

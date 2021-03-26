@@ -3,20 +3,21 @@ import { NavLink, Switch, Route } from 'react-router-dom';
 import BuscaDrinks from '../buscaDrinks/BuscaDrinks';
 import DrinkDaSorte from '../drinkDaSorte/DrinkDaSorte';
 import DrinksPopulares from '../drinksPopulares/DrinksPopulares';
+import './Drinks.css'
 
 const Drinks = () => {
   return (
     <div>
       <NavLink to="/drinks/drinkdasorte">
-        <button>Drink da Sorte</button>
+        <button className="drinksPrincipalButton">Drink da Sorte</button>
       </NavLink>
 
       <NavLink to="/drinks/populares">
-        <button>Drinks Populares</button>
+        <button className="drinksPrincipalButton">Drinks Populares</button>
       </NavLink>
 
       <NavLink to="/drinks/busca">
-        <button>Busca Drinks</button>
+        <button className="drinksPrincipalButton">Busca Drinks</button>
       </NavLink>
 
       <Switch>
