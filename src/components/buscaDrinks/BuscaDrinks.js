@@ -42,7 +42,7 @@ const BuscaDrinks = () => {
     <div className="buscaDrinks">
       <label>Qual o Drink? </label>
       <input type='text' onChange={change}></input>
-      <button onClick={click}>Buscar:</button>
+      <button className="bucaDrinksButton" onClick={click}>Buscar:</button>
       <Card img={escolhido2} nome={escolhido} descri={escolhido3} />
     </div>
   )

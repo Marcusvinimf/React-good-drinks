@@ -5,3 +5,18 @@
   color: aliceblue;
   height: 570px;
 }
+
+.bucaDrinksButton{
+  cursor: pointer;
+  font-family: var(--body-font);
+  width: 100px;
+  color: #fffdf8;
+  background: #111010;
+  padding: 8px 10px;
+  border: #fffdf8;
+}
+
+.btn:hover {
+background: var(--laranja);
+cursor: pointer;
+}
